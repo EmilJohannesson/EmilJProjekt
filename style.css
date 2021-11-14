@@ -7,3 +7,10 @@ Tags:
 Author: Emil Johannesson
 Author URI: https://github.com/EmilJohannesson
 */
+
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
