@@ -19,7 +19,10 @@ $link = get_field('page_link');
           <div class="col-lg-6">
           </div>
           <div class="col-lg-6 text-light d-flex flex-column justify-content-center align-items-center">
-            <h1 class="display-1"><?php echo $title; ?></h1>
+            <?php 
+              if($title): ?>
+                <h1 class="display-1"><?php echo $title; ?></h1>
+            <?php endif; ?>
           </div>
         </div>
       </div>
@@ -28,12 +31,22 @@ $link = get_field('page_link');
 
   <section class="generic" id="about">
     <div class="container">
-      <h2 class="display-5 mb-2"><?php echo $descriptionTitle; ?></h2>
+      <?php
+        if($descriptionTitle): ?>
+          <h2 class="display-5 mb-2"><?php echo $descriptionTitle; ?></h2>
+        <?php endif; ?>
       <div class="row mb-3">
         <div class="col-sm-12 col-md-6">
           <div class="d-flex h-50 flex-column justify-content-center mt-5">
-            <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
-            <p><?php echo $description; ?></p>
+            <?php
+              if($link): ?>             
+                <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+              <?php endif; ?>
+            
+              <?php
+              if($description): ?>
+                <p><?php echo $description; ?></p>
+              <?php endif; ?>
           </div>
         </div>
     </div>
