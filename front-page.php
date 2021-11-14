@@ -8,6 +8,8 @@ $description = get_field('page_description');
 $image = get_field('page_image');
 $link = get_field('page_link');
 
+//Taget från inlämningsuppgift 2, med lite ändringar, då designen inte var viktig.
+
 ?>
   <section class="red-bg" id="hero">
     <div class="container">
