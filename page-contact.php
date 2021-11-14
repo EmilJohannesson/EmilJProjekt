@@ -10,6 +10,8 @@ $link = get_field('page_link');
 
 ?>
 
+<h1>contacttest</h1>
+
 <?php
 get_footer();
 ?>
