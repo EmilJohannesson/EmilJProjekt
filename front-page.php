@@ -9,9 +9,6 @@ $image = get_field('page_image');
 $link = get_field('page_link');
 
 ?>
-
-
-
   <section class="red-bg" id="hero">
     <div class="container">
       <div class="d-flex flex-row-reverse justify-content-center p-4">
